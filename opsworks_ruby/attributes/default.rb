@@ -128,7 +128,7 @@ default['defaults']['framework']['adapter'] = 'rails'
 
 ## rails
 
-default['defaults']['framework']['migrate'] = true
+default['defaults']['framework']['migrate'] = false
 default['defaults']['framework']['migration_command'] =
   'case $(/usr/local/bin/bundle exec rake db:version 2>&1) in ' \
   '*"ActiveRecord::NoDatabaseError"*) /usr/local/bin/bundle exec rake db:setup;; ' \
